@@ -1,0 +1,11 @@
+#creatures {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 10px;
+}
+.creature-block {
+    width: 24%;
+    border: 1px solid #000;
+    padding: 20px
+}
