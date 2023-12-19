@@ -36,7 +36,7 @@ const startCredits = () => {
     }, 1000)
 }
 
-//startCredits()
+startCredits()
 
 /* -------------------------------------------------
 generating random creatures
@@ -63,10 +63,10 @@ const displayCreatures = () => {
     let arr = ''
     arr = creaturesArr.map((item) => {
         return `<div class="creature-block">`
-        + `<p>${item.title}</p>`
-        + `<p>${item.weight}</p>`
-        + `<p>${item.height}</p>`
-        + `<p>${item.rarity}</p>`
+        + `<p>Name: <span  class="mon-name">${item.title}</span></p>`
+        + `<p>Weight: ${item.weight} lbs</p>`
+        + `<p>Height: ${item.height} ft</p>`
+        + `<p>Rarity: ${item.rarity}</p>`
         + `</div>`
     })
     //console.log(arr)
